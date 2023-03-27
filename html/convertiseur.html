@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://127.0.0.1/game/css/header.css">
+    <title>Document</title></head>
+    <style>
+#image{
+         width: 70px;
+        height: 70px;
+        background-image: url("http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg") ;
+        background-repeat: no-repeat;
+        background-position: center; 
+       
+}
+
+
+input{
+  padding: 5px;
+}
+    </style>
+
+
+
+
+<body>
+
+</body>
+<table>
+      
+<tr>
+    <td>
+<img src="/game/css/ressources/images/logo-salle-jeux_191108-86.avif" ></td>
+<ul>
+    <td><li><a href="convertiseur.html">la conversion de température</a> </li></td>
+    <td><li><a href="Images identiques.html">Images identiques</a></li></td>
+    <td><li><a href="minimax.html">MiniMax</a></li></td>
+    <td><li><a href="equation.html">Equation seconde degré</a></li></td>
+    <td><li><a href="xo.html">jeux x.o</a></li></td>
+</ul>
+</tr>
+
+
+
+</table>
+<br><br><br><br><br><br>
+
+<table style="width: 40%;float:center;margin-left: 400px;">
+  
+    <tr> 
+        <label for ="number">Celsius</label>
+         <input type="texte" name="number" id="number" onchange="myFunction(1)"/> </tr> 
+         <tr> 
+            <label for ="number1">Fahrenheit</label>
+             <input type="texte" name="number1" id="number1" onchange="myFunction(2)"/> </tr> 
+   
+   
+   
+    </table>
+<script>
+  
+  var choix=[];
+  var variable=0;
+  var somme=0;
+function myFunction(elem) 
+{  var v=0;
+    if(elem==1){
+    var v=document.getElementById("number").value}
+    else {
+        var v=document.getElementById("number1").value   
+    }
+
+  if(elem==1){
+    document.getElementById("number1").value=v*9/5+32
+    
+  }
+  else { document.getElementById("number").value=(v-32)*5/9;}
+ 
+  
+
+}
+
+</script>
+
+</html>

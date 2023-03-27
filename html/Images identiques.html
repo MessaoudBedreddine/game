@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://127.0.0.1/game/css/header.css">
+    <title>Document</title></head>
+    <style>
+#image{
+         width: 70px;
+        height: 70px;
+        background-image: url("http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg") ;
+        background-repeat: no-repeat;
+        background-position: center; 
+       
+}
+
+
+input{
+  padding: 5px;
+}
+    </style>
+
+
+
+
+<body>
+
+</body>
+<table>
+<tr>
+    <td>
+<img src="/game/css/ressources/images/logo-salle-jeux_191108-86.avif" ></td>
+<ul>
+  <td><li><a href="convertiseur.html">la conversion de température</a> </li></td>
+  <td><li><a href="Images identiques.html">Images identiques</a></li></td>
+  <td><li><a href="minimax.html">MiniMax</a></li></td>
+  <td><li><a href="equation.html">Equation seconde degré</a></li></td>
+  <td><li><a href="xo.html">jeux x.o</a></li></td>
+</ul>
+</tr>
+
+
+
+</table>
+<br><br><br><br><br><br>
+
+<table style="width: 40%;float:center;margin-left: 400px;">
+  <tr><p id="resultat">  </p></tr>
+  <tr><p id="resultat1" style="text-align: right;">  </p></tr>
+    <tr>
+        
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image1" onclick="myFunction(1,0)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image2" onclick="myFunction(2,0)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image3" onclick="myFunction(3,0)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image4" onclick="myFunction(4,0)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image5" onclick="myFunction(5,0)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image6" onclick="myFunction(6,0)" width="90px" height="80px"></td>
+ 
+      
+
+        
+    </tr>
+    <tr>
+        
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image7" onclick="myFunction(7,6)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image8" onclick="myFunction(8,5)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image9" onclick="myFunction(9,4)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image10" onclick="myFunction(10,3)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image11" onclick="myFunction(11,2)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image12" onclick="myFunction(12,1)" width="90px" height="80px"></td>
+ 
+      
+
+        
+    </tr>
+    <tr>
+        
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image13" onclick="myFunction(13,0)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image14" onclick="myFunction(14,0)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image15" onclick="myFunction(15,0)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image16" onclick="myFunction(16,0)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image17" onclick="myFunction(17,0)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image18" onclick="myFunction(18,0)" width="90px" height="80px"></td>
+ 
+      
+
+        
+    </tr>
+    <tr>
+        
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image19" onclick="myFunction(19,15)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image20" onclick="myFunction(20,16)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image21" onclick="myFunction(21,17)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image22" onclick="myFunction(22,13)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image23" onclick="myFunction(23,18)" width="90px" height="80px"></td>
+      <td ><input type="image"src="http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg" id="image24" onclick="myFunction(24,14)" width="90px" height="80px"></td>
+ 
+      
+
+        
+    </tr>
+   
+    </table>
+<script>
+  var tour=1;
+  var choix=[];
+  var score=0;
+  score1=0;
+function myFunction(elem,elem1) 
+{  
+  var elemnt
+if(elem1!=0) { 
+  
+ var image1=elem1+'.png';}
+  else{
+  var image1=elem+'.png';}
+  var image='image'+elem;
+
+  choix.push(image);
+
+  if( choix.length!=0){
+    
+   
+       document.getElementById(image).src = 'http://127.0.0.1/game/css/ressources/images/'+image1;
+       
+      
+  }
+  
+  if(choix.length==3 && ( document.getElementById(choix[0]).src!=document.getElementById(choix[1]).src) ){
+  if(tour==1 ){
+    tour=2;
+    alert('player 2 play');
+  }
+  else {tour=1;  alert('player 1 play');}
+  document.getElementById(choix[0]).src = 'http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg';
+  document.getElementById(choix[1]).src = 'http://127.0.0.1/game/css/ressources/images/Sans\ titre.jpeg';
+  choix.splice(0,2);
+ 
+}
+if( (document.getElementById(choix[0]).src==document.getElementById(choix[1]).src )){
+ if(tour==1){
+  score=score+1;}
+  else{
+    score1=score1+1;
+  }
+
+  document.getElementById(choix[0]).style.pointerEvents = "none";
+  document.getElementById(choix[1]).style.pointerEvents = "none";
+  if(tour==1){
+  document.getElementById("resultat").innerHTML="score1:"+score;}
+  else { document.getElementById("resultat1").innerHTML="score2:"+score1;}
+  choix.splice(0,2);
+}
+var s=score1+score;
+if(s==12){
+  if(score>score1){
+  alert('congratulation player1 win');}
+  else{alert('congratulation player2 win');}
+}
+
+
+}
+</script>
++
+</html>

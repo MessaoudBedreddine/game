@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://127.0.0.1/game/css/header.css">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+      
+        <tr>
+            <td>
+        <img src="/game/css/ressources/images/logo-salle-jeux_191108-86.avif" ></td>
+        <ul>
+            <td><li><a href="convertiseur.html">la conversion de température</a> </li></td>
+            <td><li><a href="Images identiques.html">Images identiques</a></li></td>
+            <td><li><a href="minimax.html">MiniMax</a></li></td>
+            <td><li><a href="equation.html">Equation seconde degré</a></li></td>
+            <td><li><a href="xo.html">jeux x.o</a></li></td>
+        </ul>
+        </tr>
+        
+        
+        
+        </table>
+        <br><br><br><br><br><br>
+        <table width="50%" height="80" width="50px">
+        <tr><td><p id="resultat"></p>  </td>  </tr>
+        <tr>
+            <td><button id="1" value="1" onclick="calc()"></button>1</td>
+            <td><button id="2" onclick="calc()"></button>2</td>
+            <td><button id="3" onclick="calc()"></button>3</td>
+            <td><button id="+" onclick="calc()"></button>+</td>
+        </tr>
+        <tr>
+            <td><button id="4" onclick="calc()"></button>4</td>
+            <td><button id="5" onclick="calc()"></button>5</td>
+            <td><button id="6" onclick="calc()"></button>6</td>
+            <td><button id="-" onclick="calc()"></button>-</td>
+        </tr>
+        <tr>
+            <td><button id="7" onclick="calc()"></button>7</td>
+            <td><button id="8" onclick="calc()"></button>8</td>
+            <td><button id="9" onclick="calc()"></button>9</td>
+            <td><button id="/" onclick="calc()"></button>/</td>
+        </tr>
+        <tr>
+            <td><button id="0" onclick="calc()"></button>0</td>
+            <td><button id="." onclick="calc()"></button>.</td>
+            <td><button id="=" onclick="calc()"></button>=</td>
+            <td><button id="*" onclick="calc()"></button>*</td>
+        </tr>
+
+        </table>
+        <script>
+            choix=[];
+            
+function calc(){
+  
+   
+
+   choix.push(event.target.id);
+alert(choix);
+   if(event.target.id=='+' && choix[2]!=null){
+    
+   var somme= parseInt(choix[0])+parseInt(choix[2]);
+   
+   document.getElementById("resultat").innerHTML=somme;
+choix.splice(0,3);
+}
+if(event.target.id=='-'){
+var somme= parseInt(choix[0])+parseInt(choix[2])
+   document.getElementById("resultat").innerHTML=somme;
+   choix.splice(0,3);
+}
+if(event.target.id=='/'){
+var somme= parseInt(choix[0])/parseInt(choix[2])
+   document.getElementById("resultat").innerHTML=somme;
+   choix.splice(0,3);
+
+}
+if(event.target.id=='*'){
+var somme= parseInt(choix[0])*parseInt(choix[2])
+   document.getElementById("resultat").innerHTML=somme;
+   choix.splice(0,3);
+}
+}
+        </script>
+</body>
+</html>
